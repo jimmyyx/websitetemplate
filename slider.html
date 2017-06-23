@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Slider from Scratch</title>
+	<title>Website Name</title>
 
 
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -9,21 +9,33 @@
 
 </head>
 <body>
-	<!-- <div class="container-fluid" id="slide-container">
-		<div class="slide">
-	        <img src="img/1.jpg" />
-	    </div>
-	    <div class="slide">
-	        <img src="img/2.jpg" />
-	    </div>
-	    <div class="slide">
-	        <img src="img/3.jpg" />
-	    </div>
-	    <div class="slide">
-	        <img src="img/4.jpg" />
-	    </div>
-	</div> -->
-	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-topbar, #bs-botbar" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+				<a href="#" class="navbar-brand">Company Name</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-topbar">
+				<div class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Services</a></li>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Click Me!</a></li>
+					<li><a href="#">Get Started!</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
@@ -35,22 +47,22 @@
 
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner" role="listbox">
-	    <div class="item active" style="background-image: url('img/1.jpg')">
+	    <div class="item parallax active" style="background-image: url('img/1.jpg')">
 	      <div class="carousel-caption">
 	        <h3>Caption 1</h3>
 	      </div>
 	    </div>
-	    <div class="item" style="background-image: url('img/2.jpg')">
+	    <div class="item parallax" style="background-image: url('img/2.jpg')">
 	      <div class="carousel-caption">
 	        <h3>Caption 2</h3>
 	      </div>
 	    </div>
-	    <div class="item" style="background-image: url('img/3.jpg')">
+	    <div class="item parallax" style="background-image: url('img/3.jpg')">
 	      <div class="carousel-caption">
 	         <h3>Caption 3</h3>
 	      </div>
 	    </div>
-	    <div class="item" style="background-image: url('img/4.jpg')">
+	    <div class="item parallax" style="background-image: url('img/4.jpg')">
 	      <div class="carousel-caption">
 	         <h3>Caption 4</h3>
 	      </div>
@@ -66,13 +78,85 @@
 	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 	    <span class="sr-only">Next</span>
 	  </a>
+	</div> <!-- end of slider -->
+	<div class="container content">
+		<div class="col-lg-4 col-sm-12">
+			<h2>Heading 1!</h2>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+		</div>
+		<div class="col-lg-4 col-sm-12">
+			<h2>Heading 2!</h2>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+		</div>
+
+		<div class="col-lg-4 col-sm-12">
+			<h2>Heading 3!</h2>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+		</div>
 	</div>
 
+	<div class="banner parallax" style="background-image: url('img/5.jpg')">
+		<div class="banner-text hideme">
+			<div class="col-lg-4 col-sm-12">
+				<h2>Statistic 1</h2>
+				<p>Every minute, 60 seconds pass!</p>
+			</div>
+			<div class="col-lg-4 col-sm-12">
+				<h2>Statistic 2</h2>
+				<p>12.345% of stats are completely made up!</p>
+			</div>
+
+			<div class="col-lg-4 col-sm-12">
+				<h2>Statistic 3</h2>
+				<p>90% of people can't think of sample text!</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<ul class="list">
+			<h1>Reasons Why Our Company is the Best!</h1>
+			<li>
+				<h3>Lorem Ipsum</h3>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+			</li>
+			<li>
+				<h3>Lorem Ipsum</h3>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+			</li>
+			<li>
+				<h3>Lorem Ipsum</h3>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+			</li>
+			<li>
+				<h3>Lorem Ipsum</h3>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+			</li>
+			<li>
+				<h3>Lorem Ipsum</h3>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+
+			</li>
+		</ul>
+	</div>
+
+	<div class="banner parallax" style="background-image: url('img/6.jpg')">
+		<div class="banner-text hideme">
+			<h2>Give Us Your Money!</h2>
+			<input type="button" class="btn btn-primary" value="Click Me! ">
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer-text">&copy; 2017</div>
+	</footer>
+
 	<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin anonymous"></script>
 
 	<script type="text/javascript" src="slider.js"></script>
 
