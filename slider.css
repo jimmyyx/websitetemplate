@@ -7,6 +7,10 @@ body{
 	background-color: #f0f0f0;
 }
 
+.navbar{
+	padding: 0 15%;
+}
+
 .parallax{
 	background-attachment: fixed;
 }
@@ -29,11 +33,6 @@ body{
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.2), 0px 18px 23px rgba(0,0,0,0.1);
 }
 
-.container{
-	/*background-color: lightgrey*/
-
-}
-
 .content{
 	padding: 25px 25px;
 	text-align: center;
@@ -44,7 +43,6 @@ body{
 	color: steelblue;
 }
 
-
 p{
 	font-size: 1.5em;
 }
@@ -52,6 +50,12 @@ p{
 .hideme
 {
     opacity:0;
+    transition: 0.5s;
+}
+
+.container{
+	padding: 25px 0;
+	height: auto;
 }
 
 .banner{
@@ -70,8 +74,36 @@ p{
 	transform: translate(-50%, -50%);
 	color: white;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.2), 0px 18px 23px rgba(0,0,0,0.1);
+}
 
+.wrapper{
+	/*display: inline-block;*/
+}
+.gridpic{
+	border: solid white 10px;
+	background-size: cover;
+	background-position: center;
+	height: 35vh;
+	transition: 0.3s;
+}
 
+.gridpic h2{
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	visibility: hidden;
+}
+
+.gridpic:hover{
+	filter: brightness(0.7);
+	-moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+	z-index: 1;
+}
+
+.gridpic:hover h2{
+	visibility: visible;
 }
 
 ul{

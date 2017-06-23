@@ -12,7 +12,7 @@ $(document).ready(function() {
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
                 
-                $(this).animate({'opacity':'1'},500);
+                $(this).css("opacity", "1");
                     
             }
             
@@ -21,3 +21,9 @@ $(document).ready(function() {
     });
     
 });
+
+$(".thumbnail").on("mouseover", function(){
+    console.log("hovering")
+    $(this).css("display", "pink");
+})
+
