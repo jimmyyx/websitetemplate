@@ -1,29 +1,14 @@
-$(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).css("opacity", "1");
-                    
-            }
-            
-        }); 
-    
-    });
-    
-});
+function check(){
+    $('.hideme').each( function(){
+        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if( bottom_of_window > bottom_of_object ){
+            $(this).css("opacity", "1");
+        }else if (bottom_of_window < $(this).offset().top){
+            $(this).css("opacity", "0");
+        }
+    }); 
+}
 
-$(".thumbnail").on("mouseover", function(){
-    console.log("hovering")
-    $(this).css("display", "pink");
-})
-
+$(document).ready(check);
+$(window).scroll(check);
