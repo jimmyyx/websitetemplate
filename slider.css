@@ -8,8 +8,27 @@ body{
 }
 
 .navbar{
-	padding: 0 15%;
+	z-index: 2;
+  	width:100%;
+    position: fixed;
+    border: solid darkgrey 1px;
 }
+
+@media (min-width: 768px) {
+  .navbar {
+	padding: 0 15%;
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+  	width: 40%;
+  	margin-bottom: 0;
+    bottom: 0;
+  }
+}
+
 
 .parallax{
 	background-attachment: fixed;
@@ -47,10 +66,10 @@ p{
 	font-size: 1.5em;
 }
 
-.hideme{
+/*.hideme{
 	opacity: 0;
 	transition: 2.0s;
-}
+}*/
 
 .container{
 	padding: 25px 0;
